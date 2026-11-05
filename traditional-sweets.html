@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traditional Sweets & Snacks — AMRITAM</title>
+  <meta name="description" content="Discover handcrafted Indian festive sweets made with pure sugarcane jaggery, palm karupatti, and desi ghee. Zero refined sugar or synthetic syrups.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Global Sticky Navbar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Amritam Home">
+        <svg class="brand-icon-svg" viewBox="0 0 821 762" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Amritam Logo">
+          <image href="images/brand-logo.png" xlink:href="images/brand-logo.png" width="821" height="762" preserveAspectRatio="xMidYMid meet"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">AMRITAM</span>
+          <span class="brand-subtitle">Natural Sweeteners</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <!-- Home Dropdown (Home 1 & Home 2) -->
+        <div class="nav-dropdown">
+          <a href="index.html" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <span class="dropdown-chevron-btn" aria-hidden="true">
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </span>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="index.html" class="nav-dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Home 1 — Brand Discovery</span>
+                <span class="dropdown-item-badge">Default</span>
+              </div>
+              <span class="dropdown-item-desc">Pure tradition & natural sweetness story</span>
+            </a>
+            <a href="home-2.html" class="nav-dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Home 2 — Product Exploration</span>
+                <span class="dropdown-item-badge">Shop</span>
+              </div>
+              <span class="dropdown-item-desc">Interactive product showcase & sweets</span>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="health-benefits.html" class="nav-link">Health Benefits</a>
+        <a href="ingredients.html" class="nav-link">Our Ingredients</a>
+        <a href="traditional-sweets.html" class="nav-link active">Traditional Sweets</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- RTL / LTR Direction Toggle (Icon Only) -->
+        <button class="rtl-toggle-btn" type="button" aria-label="Toggle text direction (RTL/LTR)" title="Toggle RTL / LTR">
+          <svg class="rtl-icon" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+          </svg>
+        </button>
+
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+          <svg class="icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+          <svg class="icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </button>
+
+        <button class="cart-trigger-btn" type="button" aria-label="Open Shopping Cart">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="cart-badge">0</span>
+        </button>
+
+        <button class="btn btn-primary btn-sm" type="button" onclick="window.storeApp.openOrderModal()">
+          ORDER PRODUCTS
+        </button>
+
+        <button class="mobile-nav-toggle" type="button" aria-label="Toggle Menu">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="brand-logo" aria-label="Amritam Home">
+          <svg class="brand-icon-svg" viewBox="0 0 821 762" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Amritam Logo">
+            <image href="images/brand-logo.png" xlink:href="images/brand-logo.png" width="821" height="762" preserveAspectRatio="xMidYMid meet"/>
+          </svg>
+          <div class="brand-text">
+            <span class="brand-name">AMRITAM</span>
+            <span class="brand-subtitle">Natural Sweeteners</span>
+          </div>
+        </a>
+        <button class="cart-close-btn" id="mobileNavClose" type="button" aria-label="Close Mobile Menu">✕</button>
+      </div>
+      <div class="mobile-nav-links">
+        <!-- Home Dropdown in Mobile Drawer -->
+        <div class="mobile-nav-dropdown open">
+          <button class="mobile-dropdown-toggle " type="button" aria-expanded="true">
+            <span>Home</span>
+            <span class="dropdown-chevron-btn" aria-hidden="true">
+              <svg class="dropdown-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </span>
+          </button>
+          <div class="mobile-dropdown-menu show">
+            <a href="index.html" class="mobile-sublink ">Home 1 — Brand Discovery <span class="nav-arrow">→</span></a>
+            <a href="home-2.html" class="mobile-sublink ">Home 2 — Product Exploration <span class="nav-arrow">→</span></a>
+          </div>
+        </div>
+
+        <a href="about.html" class="mobile-nav-link ">About <span class="nav-arrow">→</span></a>
+        <a href="services.html" class="mobile-nav-link ">Services <span class="nav-arrow">→</span></a>
+        <a href="products.html" class="mobile-nav-link ">Products <span class="nav-arrow">→</span></a>
+        <a href="health-benefits.html" class="mobile-nav-link ">Health Benefits <span class="nav-arrow">→</span></a>
+        <a href="ingredients.html" class="mobile-nav-link ">Our Ingredients <span class="nav-arrow">→</span></a>
+        <a href="traditional-sweets.html" class="mobile-nav-link active">Traditional Sweets <span class="nav-arrow">→</span></a>
+        <a href="contact.html" class="mobile-nav-link ">Contact <span class="nav-arrow">→</span></a>
+      </div>
+      <div class="mobile-nav-actions">
+        <button class="btn btn-primary mobile-nav-cta" type="button" onclick="window.storeApp.openOrderModal()">
+          ORDER PRODUCTS
+        </button>
+        <div class="mobile-nav-icons-row">
+          <button class="rtl-toggle-btn" type="button" aria-label="Toggle text direction (RTL/LTR)" title="Toggle RTL / LTR">
+            <svg class="rtl-icon" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+          </button>
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+            <svg class="icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg class="icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </button>
+          <button class="cart-trigger-btn" type="button" aria-label="Open Shopping Cart" title="View Shopping Cart">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            <span class="cart-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MAIN CONTENT: EXACTLY 6 SECTIONS (TRADITIONAL SWEETS)
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- SECTION 01: TRADITIONAL SWEETS HERO -->
+    <section class="page-header-hero" style="background-image: url('images/image-77.png');">
+      <div class="container">
+        <span class="eyebrow">100% JAGGERY & COW GHEE SWEETS</span>
+        <h1>Authentic Traditional Sweets Handcrafted with Pure Jaggery.</h1>
+        <p>
+          Experience festive Indian sweets crafted without a single grain of refined white sugar. We slow-roast native sesame and peanuts, blend freshly grated coconut with dark palm karupatti, and bind them with pure cow ghee and fragrant cardamom.
+        </p>
+        <div class="hero-actions">
+          <a href="#sweet-collection" class="btn btn-gold">EXPLORE SWEETS COLLECTION</a>
+          <button class="btn btn-white" type="button" onclick="window.storeApp.openOrderModal('Festive Sweet Assortment', 'Traditional Sweets')">
+            ORDER FESTIVE SWEET BOX
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: OUR TRADITIONAL SWEET COLLECTION (STRICT CARD SECTION 1: EXACTLY 6 CARDS) -->
+    <section class="section" id="sweet-collection" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">HANDCRAFTED HERITAGE RECIPES</span>
+          <h2>Our Handcrafted Traditional Sweet Range</h2>
+          <p>Each delicacy is prepared in fresh small batches with natural cane or palm jaggery, pure cow ghee, and zero preservatives.</p>
+        </div>
+
+        <div class="card-grid-6">
+          <!-- Card 1: Jaggery Sesame Laddus -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-74.png" alt="Cluster of white sesame seed and jaggery til laddu balls" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Winter Classic</span>
+              <h3 class="card-title">Sesame Jaggery Laddus</h3>
+              <p class="card-desc">Hand-rolled toasted white sesame seeds bound with hot jaggery syrup and green cardamom.</p>
+              <div class="card-footer-action">
+                <div class="product-price-wrap">
+                  <span class="product-price">₹160</span>
+                  <span class="product-weight-badge">350g</span>
+                </div>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-secondary btn-sm" type="button" onclick="window.storeApp.viewDetails('prod-74')">View Details</button>
+                <button class="btn btn-primary btn-sm" type="button" onclick="window.storeApp.quickAdd('prod-74')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Coconut Jaggery Laddus -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-75.png" alt="Pyramid stack of coconut jaggery ladoos coated in shredded coconut" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Festive Treat</span>
+              <h3 class="card-title">Coconut Jaggery Laddus</h3>
+              <p class="card-desc">Freshly grated coconut slow-roasted in pure ghee and simmered with dark sugarcane jaggery.</p>
+              <div class="card-footer-action">
+                <div class="product-price-wrap">
+                  <span class="product-price">₹180</span>
+                  <span class="product-weight-badge">300g</span>
+                </div>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-secondary btn-sm" type="button" onclick="window.storeApp.viewDetails('prod-75')">View Details</button>
+                <button class="btn btn-primary btn-sm" type="button" onclick="window.storeApp.quickAdd('prod-75')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Peanut Chikki -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-76.png" alt="Peanut jaggery chikki squares on burlap fabric with loose peanuts" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Crunchy Snack</span>
+              <h3 class="card-title">Crunchy Peanut Chikki</h3>
+              <p class="card-desc">Golden slow-roasted groundnuts embedded in snappy, golden jaggery brittle with zero corn syrup.</p>
+              <div class="card-footer-action">
+                <div class="product-price-wrap">
+                  <span class="product-price">₹150</span>
+                  <span class="product-weight-badge">400g</span>
+                </div>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-secondary btn-sm" type="button" onclick="window.storeApp.viewDetails('prod-76')">View Details</button>
+                <button class="btn btn-primary btn-sm" type="button" onclick="window.storeApp.quickAdd('prod-76')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Sweet Sakkarai Pongal -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-53.png" alt="Bowl of sweet jaggery pongal sakkarai pongal topped with cashews" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Harvest Feast</span>
+              <h3 class="card-title">Sakkarai Pongal</h3>
+              <p class="card-desc">Aromatic rice and moong dal simmered in dark jaggery, laced with ghee-roasted cashews and raisins.</p>
+              <div class="card-footer-action">
+                <div class="product-price-wrap">
+                  <span class="product-price">₹190</span>
+                  <span class="product-weight-badge">450g</span>
+                </div>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-primary btn-sm" type="button" style="width:100%;" onclick="window.storeApp.addToCart({id:'sw-53', name:'Sakkarai Pongal', price:190, image:'images/image-53.png', weights:['450g']}, '450g', 1)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Traditional Jaggery Modak -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-93.png" alt="Traditional brown jaggery modak dumplings stacked on plate" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Devotional Sweet</span>
+              <h3 class="card-title">Traditional Jaggery Modak</h3>
+              <p class="card-desc">Steamed rice flour dumplings stuffed with grated fresh coconut, cane jaggery, and crushed nutmeg.</p>
+              <div class="card-footer-action">
+                <div class="product-price-wrap">
+                  <span class="product-price">₹170</span>
+                  <span class="product-weight-badge">6 pcs</span>
+                </div>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-secondary btn-sm" type="button" onclick="window.storeApp.viewDetails('prod-93')">View Details</button>
+                <button class="btn btn-primary btn-sm" type="button" onclick="window.storeApp.quickAdd('prod-93')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Temple Style Pongal Pot -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-90.png" alt="Sweet Sakkarai Pongal served in clay pot on banana leaf" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Clay Pot Specialty</span>
+              <h3 class="card-title">Temple Pongal Pot</h3>
+              <p class="card-desc">Slow-cooked in terracotta cookware with black palm jaggery, edible camphor, and pure cow ghee.</p>
+              <div class="card-footer-action">
+                <div class="product-price-wrap">
+                  <span class="product-price">₹210</span>
+                  <span class="product-weight-badge">500g</span>
+                </div>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-primary btn-sm" type="button" style="width:100%;" onclick="window.storeApp.addToCart({id:'sw-90', name:'Temple Pongal Pot', price:210, image:'images/image-90.png', weights:['500g']}, '500g', 1)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: THE ART OF TRADITIONAL PREPARATION (Editorial Storytelling) -->
+    <section class="section" style="background-color: var(--bg-primary);">
+      <div class="container story-split">
+        <div class="editorial-img-frame">
+          <img src="images/image-98.png" alt="Rich ghee-roasted atta jaggery halwa garnished with cashew nuts and saffron" style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+        </div>
+        <div>
+          <span class="eyebrow">HERITAGE CULINARY SKILL</span>
+          <h2 style="font-size:clamp(2rem, 3.2vw, 2.85rem); margin-bottom:16px;">The Sacred Art of Slow Roasting</h2>
+          <p style="color:var(--text-secondary); margin-bottom:18px; line-height:1.65;">
+            Sweet making with jaggery is fundamentally distinct from commercial syrup cooking. Jaggery requires gentle simmering to avoid bitterness, allowing roasted native flours to absorb the golden liquid without becoming heavy or dense.
+          </p>
+          <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:24px;">
+            <div style="padding:14px; background:var(--bg-secondary); border-radius:var(--radius-sm); border:1px solid var(--border-light);">
+              <strong>String Consistency Check:</strong> Artisans drop hot syrup into cool water, testing for soft-ball or hard-crack stages by hand.
+            </div>
+            <div style="padding:14px; background:var(--bg-secondary); border-radius:var(--radius-sm); border:1px solid var(--border-light);">
+              <strong>Aromatic Infusions:</strong> Hand-crushed green cardamom, dry ginger powder, and nutmeg folded in during the final cooldown.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: SWEETS FOR EVERY OCCASION (Visual Lifestyle Layout) -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+      <div class="container story-split reverse">
+        <div class="editorial-img-frame">
+          <img src="images/image-91.png" alt="Steaming hot jaggery payasam served in traditional brass uruli over banana leaf" style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+        </div>
+        <div>
+          <span class="eyebrow">CULTURAL CELEBRATIONS</span>
+          <h2 style="font-size:clamp(2rem, 3.2vw, 2.85rem); margin-bottom:16px;">Sweets for Every Occasion</h2>
+          <p style="color:var(--text-secondary); margin-bottom:20px; line-height:1.65;">
+            From Makar Sankranti harvest feasts and Ganesh Chaturthi modaks to everyday teatime chikkis, our jaggery confections honour moments of togetherness with nourishment and authenticity.
+          </p>
+          <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:14px; margin-bottom:24px;">
+            <div style="padding:14px; background:var(--bg-primary); border-radius:var(--radius-sm);">
+              <strong>Festive Gatherings:</strong> Sakkarai pongal and steamed modaks for harvest ceremonies.
+            </div>
+            <div style="padding:14px; background:var(--bg-primary); border-radius:var(--radius-sm);">
+              <strong>Daily Wholesome Snacks:</strong> Protein-dense peanut and sesame chikkis for active afternoons.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: SWEET COLLECTION HIGHLIGHTS (STRICT CARD SECTION 2: EXACTLY 4 CARDS) -->
+    <section class="section" style="background-color: var(--bg-primary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">CURATED CONFECTIONERY</span>
+          <h2>Sweet Collection Highlights</h2>
+          <p>Four distinctive confectionery creations made with verified traditional techniques.</p>
+        </div>
+
+        <div class="card-grid-4">
+          <!-- Card 1: Steamed Ukadiche Modaks -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-96.png" alt="Steamed Ukadiche Modak on a plate revealing sweet jaggery-coconut stuffing" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Highlight 01</span>
+              <h3 class="card-title">Ukadiche Modaks</h3>
+              <p class="card-desc">Delicate steamed rice shells filled with freshly grated coconut, cane jaggery, and nutmeg.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Assorted Celebration Sweet Box -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-87.png" alt="Partitioned sweet gift box containing assorted traditional jaggery confections" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Highlight 02</span>
+              <h3 class="card-title">Celebration Gift Box</h3>
+              <p class="card-desc">Curated festive boxes featuring peanut chikkis, sesame laddus, and artisanal jaggery burfis.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Stack of Til Patti Squares -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-92.png" alt="Stack of golden-brown sesame seed chikki til patti squares on brass platter" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Highlight 03</span>
+              <h3 class="card-title">Til Patti Squares</h3>
+              <p class="card-desc">Wafer-thin, crisp sesame brittle prepared through traditional open-hearth rolling techniques.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Golden Unrefined Demerara Confections -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-70.png" alt="Round glass jar filled with raw unrefined cane sugar demerara crystals" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Highlight 04</span>
+              <h3 class="card-title">Raw Cane Crystals</h3>
+              <p class="card-desc">Coarse unrefined demerara crystals offering delicate butterscotch notes for traditional dusting.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section CTA Button -->
+        <div class="section-cta-wrap" style="text-align:center; margin-top:36px;">
+          <a href="products.html?cat=sweets" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:10px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="8" width="18" height="4" rx="1"/>
+              <path d="M12 8v13"/>
+              <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/>
+              <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/>
+            </svg>
+            <span>EXPLORE ALL TRADITIONAL SWEETS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: ORDER YOUR FAVOURITES CTA -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="banner-cta">
+          <span class="eyebrow" style="color:#C4E2C2;">FRESHLY PREPARED</span>
+          <h2>Bring Home the Taste of Tradition.</h2>
+          <p>
+            Treat your family to unrefined, chemical-free sweets made with pure jaggery, cow ghee, and farm-roasted nuts.
+          </p>
+          <div class="banner-cta-actions">
+            <a href="products.html?cat=sweets" class="btn btn-white btn-lg">SHOP ALL SWEETS</a>
+            <button class="btn btn-gold btn-lg" type="button" onclick="window.storeApp.openOrderModal('Festive Sweets Box', 'Traditional Sweets')">
+              ORDER SWEETS NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <div class="cart-title-wrap">
+          <h3>YOUR SHOPPING CART</h3>
+          <span class="cart-count-pill" id="cartHeaderCount">0 items</span>
+        </div>
+        <button class="cart-close-btn" type="button" onclick="window.storeApp.closeCart()" aria-label="Close Cart">✕</button>
+      </div>
+      <div class="cart-body" id="cartDrawerBody"></div>
+      <div class="cart-footer" id="cartDrawerFooter"></div>
+    </div>
+  </div>
+
+  <!-- Reusable Order Modal -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Product Order Enquiry</h3>
+        <button class="modal-close-btn" type="button" onclick="window.storeApp.closeOrderModal()" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="orderEnquiryForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Full Name <span class="req">*</span></label>
+              <input type="text" name="fullName" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number <span class="req">*</span></label>
+              <input type="tel" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group full-width">
+              <label class="form-label">Email Address <span class="req">*</span></label>
+              <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Product Category</label>
+              <select name="category" id="orderCategorySelect" class="form-control">
+                <option value="Traditional Sweets" selected>Traditional Sweets</option>
+                <option value="Traditional Cane Jaggery">Traditional Cane Jaggery</option>
+                <option value="Palm Jaggery (Karupatti)">Palm Jaggery (Karupatti)</option>
+                <option value="Jaggery Powders & Sugar">Jaggery Powders & Sugar</option>
+                <option value="Natural Syrups">Natural Syrups</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Select Product</label>
+              <select name="productName" id="orderProductSelect" class="form-control">
+                <option value="Festive Sweet Assortment">Festive Sweet Assortment</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Required Quantity</label>
+              <input type="text" name="quantity" class="form-control" placeholder="e.g. 2 boxes / 1 kg">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Packaging</label>
+              <select name="packaging" class="form-control">
+                <option value="Festive Gift Box">Festive Gift Box</option>
+                <option value="Eco-friendly Kraft Box">Eco-friendly Kraft Box</option>
+                <option value="Traditional Palm Leaf Kottan">Traditional Palm Leaf Kottan</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label class="form-label">Delivery Address & Special Notes</label>
+              <textarea name="message" id="orderMessage" class="form-control" placeholder="Enter delivery city, pin code or custom requirements..."></textarea>
+            </div>
+          </div>
+          <div class="modal-form-actions" style="display:flex; justify-content:flex-end; gap:12px; margin-top:22px;">
+            <button class="btn btn-secondary" type="button" onclick="window.storeApp.closeOrderModal()">Cancel</button>
+            <button class="btn btn-primary" type="submit">Submit Order Enquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail Modal -->
+  <div class="modal-overlay" id="productDetailModal">
+    <div class="modal-box modal-lg">
+      <div class="modal-header">
+        <h3>Product Details</h3>
+        <button class="modal-close-btn" type="button" onclick="window.storeApp.closeProductModal()" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <svg class="brand-icon-svg" viewBox="0 0 821 762" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Amritam Logo">
+              <image href="images/brand-logo.png" xlink:href="images/brand-logo.png" width="821" height="762" preserveAspectRatio="xMidYMid meet"/>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-name" style="font-size:1.15rem;">AMRITAM</span>
+              <span class="brand-subtitle">Natural Sweeteners</span>
+            </div>
+          </div>
+          <p>Championing heirloom Indian jaggery varieties, wild palmyra karupatti, and traditional sweets crafted through ancestral recipes.</p>
+          <div class="social-links">
+            <a href="javascript:void(0)" class="social-link" aria-label="Instagram">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="javascript:void(0)" class="social-link" aria-label="Facebook">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+            </a>
+            <a href="javascript:void(0)" class="social-link" aria-label="YouTube">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <div class="footer-links">
+            <a href="products.html">Products</a>
+            <a href="health-benefits.html">Health Benefits</a>
+            <a href="ingredients.html">Our Ingredients</a>
+            <a href="traditional-sweets.html">Traditional Sweets</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <div class="footer-links">
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0)" onclick="window.storeApp.openOrderModal()">Order Enquiry</a>
+            <a href="services.html#bulk">Bulk Orders</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.875rem; margin-bottom:12px;">Get harvest updates and traditional seasonal sweet recipes.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AMRITAM Jaggery & Natural Sweeteners Store. All rights reserved.</p>
+        <p style="font-size:0.8125rem;">Crafted with 100% Organic & Chemical-Free Integrity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Drop to Top (Back to Top) Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" type="button" aria-label="Scroll back to top">
+    <svg class="back-to-top-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

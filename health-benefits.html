@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Benefits & Conscious Sweetening — AMRITAM</title>
+  <meta name="description" content="Responsible, evidence-informed guide to traditional sweeteners. Understand mineral contents, glycemic nuances, culinary pairings, and moderation.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Global Sticky Navbar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Amritam Home">
+        <svg class="brand-icon-svg" viewBox="0 0 821 762" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Amritam Logo">
+          <image href="images/brand-logo.png" xlink:href="images/brand-logo.png" width="821" height="762" preserveAspectRatio="xMidYMid meet"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">AMRITAM</span>
+          <span class="brand-subtitle">Natural Sweeteners</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <!-- Home Dropdown (Home 1 & Home 2) -->
+        <div class="nav-dropdown">
+          <a href="index.html" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <span class="dropdown-chevron-btn" aria-hidden="true">
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </span>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="index.html" class="nav-dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Home 1 — Brand Discovery</span>
+                <span class="dropdown-item-badge">Default</span>
+              </div>
+              <span class="dropdown-item-desc">Pure tradition & natural sweetness story</span>
+            </a>
+            <a href="home-2.html" class="nav-dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Home 2 — Product Exploration</span>
+                <span class="dropdown-item-badge">Shop</span>
+              </div>
+              <span class="dropdown-item-desc">Interactive product showcase & sweets</span>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="health-benefits.html" class="nav-link active">Health Benefits</a>
+        <a href="ingredients.html" class="nav-link">Our Ingredients</a>
+        <a href="traditional-sweets.html" class="nav-link">Traditional Sweets</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- RTL / LTR Direction Toggle (Icon Only) -->
+        <button class="rtl-toggle-btn" type="button" aria-label="Toggle text direction (RTL/LTR)" title="Toggle RTL / LTR">
+          <svg class="rtl-icon" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+          </svg>
+        </button>
+
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+          <svg class="icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+          <svg class="icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </button>
+
+        <button class="cart-trigger-btn" type="button" aria-label="Open Shopping Cart">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="cart-badge">0</span>
+        </button>
+
+        <button class="btn btn-primary btn-sm" type="button" onclick="window.storeApp.openOrderModal()">
+          ORDER PRODUCTS
+        </button>
+
+        <button class="mobile-nav-toggle" type="button" aria-label="Toggle Menu">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="brand-logo" aria-label="Amritam Home">
+          <svg class="brand-icon-svg" viewBox="0 0 821 762" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Amritam Logo">
+            <image href="images/brand-logo.png" xlink:href="images/brand-logo.png" width="821" height="762" preserveAspectRatio="xMidYMid meet"/>
+          </svg>
+          <div class="brand-text">
+            <span class="brand-name">AMRITAM</span>
+            <span class="brand-subtitle">Natural Sweeteners</span>
+          </div>
+        </a>
+        <button class="cart-close-btn" id="mobileNavClose" type="button" aria-label="Close Mobile Menu">✕</button>
+      </div>
+      <div class="mobile-nav-links">
+        <!-- Home Dropdown in Mobile Drawer -->
+        <div class="mobile-nav-dropdown open">
+          <button class="mobile-dropdown-toggle " type="button" aria-expanded="true">
+            <span>Home</span>
+            <span class="dropdown-chevron-btn" aria-hidden="true">
+              <svg class="dropdown-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </span>
+          </button>
+          <div class="mobile-dropdown-menu show">
+            <a href="index.html" class="mobile-sublink ">Home 1 — Brand Discovery <span class="nav-arrow">→</span></a>
+            <a href="home-2.html" class="mobile-sublink ">Home 2 — Product Exploration <span class="nav-arrow">→</span></a>
+          </div>
+        </div>
+
+        <a href="about.html" class="mobile-nav-link ">About <span class="nav-arrow">→</span></a>
+        <a href="services.html" class="mobile-nav-link ">Services <span class="nav-arrow">→</span></a>
+        <a href="products.html" class="mobile-nav-link ">Products <span class="nav-arrow">→</span></a>
+        <a href="health-benefits.html" class="mobile-nav-link active">Health Benefits <span class="nav-arrow">→</span></a>
+        <a href="ingredients.html" class="mobile-nav-link ">Our Ingredients <span class="nav-arrow">→</span></a>
+        <a href="traditional-sweets.html" class="mobile-nav-link ">Traditional Sweets <span class="nav-arrow">→</span></a>
+        <a href="contact.html" class="mobile-nav-link ">Contact <span class="nav-arrow">→</span></a>
+      </div>
+      <div class="mobile-nav-actions">
+        <button class="btn btn-primary mobile-nav-cta" type="button" onclick="window.storeApp.openOrderModal()">
+          ORDER PRODUCTS
+        </button>
+        <div class="mobile-nav-icons-row">
+          <button class="rtl-toggle-btn" type="button" aria-label="Toggle text direction (RTL/LTR)" title="Toggle RTL / LTR">
+            <svg class="rtl-icon" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+          </button>
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+            <svg class="icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg class="icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </button>
+          <button class="cart-trigger-btn" type="button" aria-label="Open Shopping Cart" title="View Shopping Cart">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            <span class="cart-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MAIN CONTENT: EXACTLY 6 SECTIONS (HEALTH BENEFITS)
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- SECTION 01: HEALTH AND NATURAL INGREDIENTS HERO -->
+    <section class="page-header-hero" style="background-image: url('images/image-45.png');">
+      <div class="container">
+        <span class="eyebrow">HEALTH & NUTRITION FACTS</span>
+        <h1>Why Choose Natural Sweeteners Over Refined White Sugar?</h1>
+        <p>
+          At <strong>AMRITAM</strong> (the pure "Nectar of Life"), we believe sweetness should nourish your body. Discover how unrefined jaggery and palm karupatti retain iron, potassium, and magnesium to support digestion, vitality, and immunity.
+        </p>
+        <div class="hero-actions">
+          <a href="#comparison" class="btn btn-gold">VIEW NUTRITION COMPARISON</a>
+          <a href="products.html" class="btn btn-white">SHOP HEALTHY SWEETENERS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: UNDERSTANDING NATURAL SWEETENERS (Editorial Breakdown) -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+      <div class="container story-split">
+        <div class="editorial-img-frame">
+          <video autoplay loop muted playsinline preload="auto" style="width:100%; height:100%; object-fit:cover; display:block; border-radius:inherit;" aria-label="Honey flowing smoothly from honeycomb">
+            <source src="images/Honey_flowing_from_honeycomb_202608271659.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div>
+          <span class="eyebrow">MINERALS VS. EMPTY CALORIES</span>
+          <h2 style="font-size:clamp(2rem, 3.2vw, 2.85rem); margin-bottom:16px;">The Real Health Benefits of Pure Indian Jaggery</h2>
+          <p style="color:var(--text-secondary); margin-bottom:18px; line-height:1.65;">
+            Industrial white sugar undergoes intensive chemical clarification, carbonatation, and bone-char filtering that strips away 100% of the plant's micronutrients, leaving only empty sucrose calories.
+          </p>
+          <p style="color:var(--text-secondary); margin-bottom:24px; line-height:1.65;">
+            In contrast, traditional jaggery and palm karupatti retain significant percentages of natural molasses. This delivers valuable iron, magnesium, potassium, and plant polyphenols that slow digestion and satisfy your palate with far less volume.
+          </p>
+          <div style="padding:16px; background:var(--bg-primary); border-radius:var(--radius-sm); border-left:4px solid var(--accent-gold);">
+            <strong>A Note on Moderation:</strong> Natural sweeteners are wholesome culinary alternatives, but still elevate blood glucose. Diabetics should always consult their physician regarding personal portion limits.
+          </div>
+          <div style="margin-top:24px;">
+            <a href="#comparison" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:10px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v18"/>
+                <rect width="18" height="18" x="3" y="3" rx="2"/>
+                <path d="M3 9h18"/>
+                <path d="M3 15h18"/>
+              </svg>
+              <span>UNDERSTAND NUTRITION COMPARISON</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: PRODUCT KNOWLEDGE (STRICT CARD SECTION 1: EXACTLY 4 CARDS) -->
+    <section class="section" style="background-color: var(--bg-primary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">HOLISTIC NUTRITION INSIGHTS</span>
+          <h2>Product Knowledge & Daily Wisdom</h2>
+          <p>Practical ways traditional sweeteners enhance holistic daily nourishment.</p>
+        </div>
+
+        <div class="card-grid-4">
+          <!-- Card 1: Traditional Preparation -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-43.png" alt="Glass jar labeled Organic Raw Honey with wooden honey dipper" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Insight 01</span>
+              <h3 class="card-title">Living Enzymes</h3>
+              <p class="card-desc">Low-temperature processing preserves heat-sensitive botanical enzymes, amino acids, and floral aroma profiles.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Mindful Beverage Swaps -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-55.png" alt="Traditional jaggery masala chai in clay kulhad with fresh spices" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Insight 02</span>
+              <h3 class="card-title">Warming Spiced Chai</h3>
+              <p class="card-desc">Combining unrefined cane jaggery with dry ginger and crushed cardamom creates an invigorating digestive morning brew.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Easy Tea Infusion -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-57.png" alt="Step-by-step jaggery tea preparation infographic" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Insight 03</span>
+              <h3 class="card-title">Proper Brewing Method</h3>
+              <p class="card-desc">Adding jaggery powder immediately after removing tea from heat prevents curdling while locking in deep malt notes.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Nut & Seed Energy Synergy -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-54.png" alt="Overhead flat lay of almonds, dates, honey, and healthy sweet balls" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Insight 04</span>
+              <h3 class="card-title">Nut & Seed Synergy</h3>
+              <p class="card-desc">Jaggery naturally pairs with protein-dense sesame and peanuts (chikki/laddus) to provide sustained sustained post-workout energy.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-cta-wrap" style="text-align:center; margin-top:36px;">
+          <a href="products.html" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:10px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+              <path d="M3 6h18"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span>EXPLORE NOURISHING PANTRY PRODUCTS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: NATURAL SWEETENERS COMPARISON (Comparison Table) -->
+    <section class="section" id="comparison" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">SIDE-BY-SIDE VERIFICATION</span>
+          <h2>Natural Sweeteners Comparison</h2>
+          <p>Compare the botanical origins, physical forms, and primary culinary uses across our four key sweeteners.</p>
+        </div>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Sweetener Variety</th>
+                <th>Botanical Source</th>
+                <th>Physical Form</th>
+                <th>Distinct Flavour Profile</th>
+                <th>Ideal Culinary Applications</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Artisan Cane Jaggery</strong></td>
+                <td>Heirloom Sugarcane Juice</td>
+                <td>Cubes, Round Bheli, Granules</td>
+                <td>Earthy, warm caramel, rich molasses</td>
+                <td>Masala chai, sambar balancing, halwa, daily cooking</td>
+              </tr>
+              <tr>
+                <td><strong>Palmyra Palm Karupatti</strong></td>
+                <td>Wild Palmyra Palm Sap (Neera)</td>
+                <td>Dark Solid Cakes, Granules</td>
+                <td>Smoky, deeply mineral, toasted cocoa</td>
+                <td>Herbal sukku coffee, payasam, festive adhirasam</td>
+              </tr>
+              <tr>
+                <td><strong>Unrefined Country Sugar</strong></td>
+                <td>Aerated Sugarcane Juice</td>
+                <td>Free-flowing Golden Powder</td>
+                <td>Mild floral sweetness, butterscotch</td>
+                <td>1:1 baking substitute, morning oats, milkshakes</td>
+              </tr>
+              <tr>
+                <td><strong>Wild Raw Honey</strong></td>
+                <td>Forest Flora Nectar</td>
+                <td>Viscous Pourable Liquid</td>
+                <td>Delicate botanical, floral nectar</td>
+                <td>Lemon water, salad dressings, toast drizzle</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: SMART INGREDIENT CHOICES (STRICT CARD SECTION 2: EXACTLY 4 CARDS) -->
+    <section class="section" style="background-color: var(--bg-primary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">PANTRY GUIDELINES</span>
+          <h2>Smart Ingredient Choices</h2>
+          <p>Simple practical habits for conscious households switching away from refined sugars.</p>
+        </div>
+
+        <div class="card-grid-4">
+          <!-- Card 1: Read Product Labels -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-49.png" alt="Bowl of wholesome ragi porridge topped with almonds and palm jaggery" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Guide 01</span>
+              <h3 class="card-title">1. Read Labels Closely</h3>
+              <p class="card-desc">Beware of artificially pale, bright yellow jaggery often treated with sodium hydrosulphite. Authentic jaggery is deep golden-brown.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Check Ingredient Origins -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-51.png" alt="Glass of warm jaggery milk drink with jaggery cubes on wooden bowl" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Guide 02</span>
+              <h3 class="card-title">2. Know the Origin</h3>
+              <p class="card-desc">Check whether your sweetener derives from sugarcane, palmyra trees, or date palms to match the right flavour intensity.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Understand Balanced Portions -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-52.png" alt="Golden pineapple kesari halwa garnished with saffron strands and cashews" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Guide 03</span>
+              <h3 class="card-title">3. Balanced Portions</h3>
+              <p class="card-desc">Because natural jaggery carries robust flavour depth, you need 20% to 30% less sweetener compared to flat white sugar.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Store in Dry Containers -->
+          <div class="store-card">
+            <div class="card-media">
+              <img src="images/image-58.png" alt="Natural sweetener breakfast spread featuring syrup drizzled pancakes and dates" class="card-img" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-category-tag">Guide 04</span>
+              <h3 class="card-title">4. Moisture-Free Storage</h3>
+              <p class="card-desc">Unrefined sugars absorb ambient moisture. Keep blocks wrapped in palm leaves and transfer powders to airtight jars.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-cta-wrap" style="text-align:center; margin-top:36px;">
+          <a href="ingredients.html" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:10px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+            <span>UNDERSTAND INGREDIENT PURITY & ORIGINS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: EXPLORE NATURAL PRODUCTS CTA -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="banner-cta">
+          <span class="eyebrow" style="color:#C4E2C2;">MAKE THE HEALTHY SWITCH</span>
+          <h2>Nourish Your Family with AMRITAM Sweeteners.</h2>
+          <p>
+            Replace chemical-bleached white sugar with mineral-rich, unrefined sugarcane jaggery, palm karupatti, and traditional sweets.
+          </p>
+          <div class="banner-cta-actions">
+            <a href="products.html" class="btn btn-white btn-lg">SHOP HEALTHY SWEETENERS</a>
+            <a href="ingredients.html" class="btn btn-gold btn-lg">EXPLORE PURE INGREDIENTS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <div class="cart-title-wrap">
+          <h3>YOUR SHOPPING CART</h3>
+          <span class="cart-count-pill" id="cartHeaderCount">0 items</span>
+        </div>
+        <button class="cart-close-btn" type="button" onclick="window.storeApp.closeCart()" aria-label="Close Cart">✕</button>
+      </div>
+      <div class="cart-body" id="cartDrawerBody"></div>
+      <div class="cart-footer" id="cartDrawerFooter"></div>
+    </div>
+  </div>
+
+  <!-- Reusable Order Modal -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Product Order Enquiry</h3>
+        <button class="modal-close-btn" type="button" onclick="window.storeApp.closeOrderModal()" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="orderEnquiryForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Full Name <span class="req">*</span></label>
+              <input type="text" name="fullName" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number <span class="req">*</span></label>
+              <input type="tel" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group full-width">
+              <label class="form-label">Email Address <span class="req">*</span></label>
+              <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Product Category</label>
+              <select name="category" id="orderCategorySelect" class="form-control">
+                <option value="All Categories">All Categories</option>
+                <option value="Traditional Cane Jaggery">Traditional Cane Jaggery</option>
+                <option value="Palm Jaggery (Karupatti)">Palm Jaggery (Karupatti)</option>
+                <option value="Jaggery Powders & Sugar">Jaggery Powders & Sugar</option>
+                <option value="Natural Syrups">Natural Syrups</option>
+                <option value="Traditional Sweets">Traditional Sweets</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Select Product</label>
+              <select name="productName" id="orderProductSelect" class="form-control">
+                <option value="General Order / Multiple Items">General Order / Multiple Items</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Required Quantity</label>
+              <input type="text" name="quantity" class="form-control" placeholder="e.g. 2 packs / 5 kg">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Packaging</label>
+              <select name="packaging" class="form-control">
+                <option value="Eco-friendly Kraft Pouch">Eco-friendly Kraft Pouch</option>
+                <option value="Traditional Palm Leaf Kottan">Traditional Palm Leaf Kottan</option>
+                <option value="Glass Jar Container">Glass Jar Container</option>
+                <option value="Bulk Sack (10kg+)">Bulk Sack (10kg+)</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label class="form-label">Delivery Address & Special Notes</label>
+              <textarea name="message" id="orderMessage" class="form-control" placeholder="Enter delivery city, pin code or custom requirements..."></textarea>
+            </div>
+          </div>
+          <div class="modal-form-actions" style="display:flex; justify-content:flex-end; gap:12px; margin-top:22px;">
+            <button class="btn btn-secondary" type="button" onclick="window.storeApp.closeOrderModal()">Cancel</button>
+            <button class="btn btn-primary" type="submit">Submit Order Enquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <svg class="brand-icon-svg" viewBox="0 0 821 762" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Amritam Logo">
+              <image href="images/brand-logo.png" xlink:href="images/brand-logo.png" width="821" height="762" preserveAspectRatio="xMidYMid meet"/>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-name" style="font-size:1.15rem;">AMRITAM</span>
+              <span class="brand-subtitle">Natural Sweeteners</span>
+            </div>
+          </div>
+          <p>Championing heirloom Indian jaggery varieties, wild palmyra karupatti, and traditional sweets crafted through ancestral recipes.</p>
+          <div class="social-links">
+            <a href="javascript:void(0)" class="social-link" aria-label="Instagram">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="javascript:void(0)" class="social-link" aria-label="Facebook">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+            </a>
+            <a href="javascript:void(0)" class="social-link" aria-label="YouTube">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <div class="footer-links">
+            <a href="products.html">Products</a>
+            <a href="health-benefits.html">Health Benefits</a>
+            <a href="ingredients.html">Our Ingredients</a>
+            <a href="traditional-sweets.html">Traditional Sweets</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <div class="footer-links">
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0)" onclick="window.storeApp.openOrderModal()">Order Enquiry</a>
+            <a href="services.html#bulk">Bulk Orders</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.875rem; margin-bottom:12px;">Get harvest updates and traditional seasonal sweet recipes.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AMRITAM Jaggery & Natural Sweeteners Store. All rights reserved.</p>
+        <p style="font-size:0.8125rem;">Crafted with 100% Organic & Chemical-Free Integrity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Drop to Top (Back to Top) Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" type="button" aria-label="Scroll back to top">
+    <svg class="back-to-top-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
