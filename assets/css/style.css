@@ -4166,6 +4166,19 @@ textarea.form-control {
   text-align: center;
 }
 
+/* About Story Feature Titles (Light & Dark Theme Visibility) */
+.about-feature-title {
+  color: var(--color-forest-green);
+  font-size: 1.1rem;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+[data-theme="dark"] .about-feature-title {
+  color: #72E889 !important;
+}
+
 /* ========================================================
    ABOUT PAGE: INTERACTIVE ADVANTAGE IMAGE SHOWCASE
    ======================================================== */
