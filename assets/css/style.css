@@ -2994,10 +2994,13 @@ textarea.form-control {
   .mobile-nav-toggle {
     display: flex !important;
   }
-  /* In tab view (1024px, 768px) and all mobile views: remove the 3 buttons from top navbar */
+  /* In tab view (1024px, 768px) and all mobile views: remove the 3 icon buttons and the ORDER PRODUCTS button from top navbar (already inside sidebar drawer) */
   .site-header .nav-actions .rtl-toggle-btn,
   .site-header .nav-actions .theme-toggle-btn,
-  .site-header .nav-actions .cart-trigger-btn {
+  .site-header .nav-actions .cart-trigger-btn,
+  .site-header .nav-actions .btn,
+  .site-header .nav-actions .btn-sm,
+  .site-header .nav-actions .nav-cta-btn {
     display: none !important;
   }
 }
