@@ -359,6 +359,36 @@
       storage: 'Fresh sweet. Consume within 3 days.'
     },
     {
+      id: 'sw-53',
+      name: 'Sakkarai Pongal',
+      category: 'sweets',
+      categoryName: 'Traditional Sweets',
+      price: 190,
+      image: 'images/image-53.png',
+      weights: ['450g'],
+      rating: 4.9,
+      reviews: 112,
+      stock: 'In Stock',
+      desc: 'Aromatic rice and moong dal simmered in dark jaggery, laced with ghee-roasted cashews and raisins.',
+      ingredients: 'Aged raw rice, Moong dal, Sugarcane jaggery, Cow ghee, Cashews, Raisins, Green cardamom',
+      storage: 'Fresh sweet. Keep in airtight container or refrigerate. Best within 5 days.'
+    },
+    {
+      id: 'sw-90',
+      name: 'Temple Pongal Pot',
+      category: 'sweets',
+      categoryName: 'Traditional Sweets',
+      price: 210,
+      image: 'images/image-90.png',
+      weights: ['500g'],
+      rating: 5.0,
+      reviews: 148,
+      stock: 'In Stock',
+      desc: 'Slow-cooked in terracotta cookware with black palm jaggery, edible camphor, and pure cow ghee.',
+      ingredients: 'Raw rice, Moong dal, Black palm jaggery (karupatti), Cow ghee, Cashews, Cardamom, Edible camphor',
+      storage: 'Clay pot preparation. Best consumed warm within 4 days.'
+    },
+    {
       id: 'prod-101',
       name: 'Spiced Sukku Karupatti Cubes',
       category: 'palm-jaggery',
